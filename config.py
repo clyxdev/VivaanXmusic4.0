@@ -41,7 +41,7 @@ SOCIALDOWN_BASE_URL = os.getenv("SOCIALDOWN_BASE_URL", "https://socialdown.itz-a
 SOCIALDOWN_TIMEOUT = int(os.getenv("SOCIALDOWN_TIMEOUT", "30"))
 
 # Vars For API End Pont.
-#YTPROXY_URL = getenv("YTPROXY_URL", 'https://t.me/Syntaxpy') .
+#YTPROXY_URL = getenv(https://tgapi.xbitcode.com", 'https://t.me/Syntaxpy') .
 #YT_API_KEY = getenv("xbit_stMImVy7KVnx3d4goutCGhgLa76cSUai" , None ) ## Your API key like: xbit_10000000xx0233
 
 # ── Hosting / deployment ───────────────────────────────────────────────────────
