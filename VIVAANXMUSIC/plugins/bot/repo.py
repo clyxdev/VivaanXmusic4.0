@@ -4,7 +4,7 @@ from VIVAANXMUSIC import app
 from config import BOT_USERNAME
 
 repo_caption = """**
-🚀 ᴄʟᴏɴᴇ ᴀɴᴅ ᴅᴇᴘʟᴏʏ – 𝐕ɪᴠᴀᴀɴ 𝐍ᴇᴛᴡᴏʀᴋ ʀᴇᴘᴏ 🚀
+🚀ᴄʟᴏɴᴇ ᴀɴᴅ ᴅᴇᴘʟᴏʏ – 𝐒ʜɴᴡᴀᴢ 𝐃ᴇᴠ 🚀
 
 ➤ ᴅᴇᴘʟᴏʏ ᴇᴀsɪʟʏ ᴏɴ ʜᴇʀᴏᴋᴜ ᴡɪᴛʜᴏᴜᴛ ᴇʀʀᴏʀꜱ  
 ➤ ɴᴏ ʜᴇʀᴏᴋᴜ ʙᴀɴ ɪꜱꜱᴜᴇ  
@@ -20,12 +20,12 @@ async def show_repo(_, msg):
     buttons = [
         [InlineKeyboardButton("➕ ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ ✨", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
         [
-            InlineKeyboardButton("👑 ᴏᴡɴᴇʀ", url="https://t.me/EliteSid"),
-            InlineKeyboardButton("💬 ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/VivaanSupport")
+            InlineKeyboardButton("👑 ᴏᴡɴᴇʀ", url="https://t.me/Syntaxpy"),
+            InlineKeyboardButton("💬 ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/renderpy")
         ],
         [
-            InlineKeyboardButton("🛠️ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url="https://t.me/VivaanSupport"),
-            InlineKeyboardButton("🎵 ɢɪᴛʜᴜʙ", url="https://github.com/VivaanNetworkDev/VivaanXmusic4.0")
+            InlineKeyboardButton("🛠️ ꜱᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ", url="https://t.me/renderpy"),
+            InlineKeyboardButton("🎵 ɢɪᴛʜᴜʙ", url="https://github.com/clyxdev")
         ]
     ]
 
@@ -33,7 +33,7 @@ async def show_repo(_, msg):
 
     try:  
         await msg.reply_photo(
-            photo="https://files.catbox.moe/22oahi.jpg",
+            photo="https://files.catbox.moe/keb4um.jpg",
             caption=repo_caption,
             reply_markup=reply_markup
         )
