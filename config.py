@@ -31,10 +31,10 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1288490189999")
 PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "3000000"))
 
 # ── External APIs ──────────────────────────────────────────────────────────────
-COOKIE_URL = getenv("https://batbin.me/recanvas")  # required (paste link)
-DEEP_API = getenv("sk-8fb8c5984f0d4364bc03e52bbaf7f16a")      # optional
-API_URL = getenv("https://tgapi.xbitcode.com")        # optional
-API_KEY = getenv("xbit_stMImVy7KVnx3d4goutCGhgLa76cSUai", None) 
+COOKIE_URL = getenv("COOKIE_URL")                              # required (paste link)
+DEEP_API = getenv("DEEP_API")                                  # optional
+API_URL = getenv("API_URL")                                    # optional
+API_KEY = getenv("API_KEY", None)                              # optional
 
 # SocialDown API Settings
 SOCIALDOWN_BASE_URL = os.getenv("SOCIALDOWN_BASE_URL", "https://socialdown.itz-ashlynn.workers.dev")
