@@ -8,31 +8,31 @@ from pyrogram import filters
 load_dotenv()
 
 # ── Core bot config ────────────────────────────────────────────────────────────
-API_ID = int(getenv("API_ID", 27798659))
-API_HASH = getenv("API_HASH", "26100c77cee02e5e34b2bbee58440f86")
-BOT_TOKEN = getenv("BOT_TOKEN")
+API_ID = int(getenv("API_ID",38677857))
+API_HASH = getenv("API_HASH", "064dccd80fc2634c2fefea331df82bb0")
+BOT_TOKEN = getenv("8728787845:AAFU_eOR1KD_2-2IGsDTLgpwVtMDAFboFlU")
 
-OWNER_ID = int(getenv("OWNER_ID", 8088623806))
-OWNER_USERNAME = getenv("OWNER_USERNAME", "EliteSid")
-BOT_USERNAME = getenv("BOT_USERNAME", "Vivan_music_bot")
-BOT_NAME = getenv("BOT_NAME", "˹𝐕ɪᴠᴀᴀɴ ✘ 𝙼ᴜsɪᴄ˼ ♪")
-ASSUSERNAME = getenv("ASSUSERNAME", "Vivaanassistant")
+OWNER_ID = int(getenv("OWNER_ID", 1329546526))
+OWNER_USERNAME = getenv("OWNER_USERNAME", "Syntaxpy")
+BOT_USERNAME = getenv("BOT_USERNAME", "culsorbot")
+BOT_NAME = getenv("BOT_NAME", "culsor")
+ASSUSERNAME = getenv("ASSUSERNAME", "Ruhaan_II")
 
 # ── Database & logging ─────────────────────────────────────────────────────────
-MONGO_DB_URI = getenv("MONGO_DB_URI")
-LOGGER_ID = int(getenv("LOGGER_ID", -1002922616309))
+MONGO_DB_URI = getenv("mongodb+srv://shnwaz38:shnwaz38@cluster0.itsfvvz.mongodb.net/?appName=Cluster0")
+LOGGER_ID = int(getenv("LOGGER_ID", -1003586614728))
 
 # ── Limits (durations in min/sec; sizes in bytes) ──────────────────────────────
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 300))
-SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION", "1200"))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 300000))
+SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION", "1200000"))
 SONG_DOWNLOAD_DURATION_LIMIT = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "1800"))
 TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "157286400"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1288490189999"))
-PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "30"))
+PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "3000000"))
 
 # ── External APIs ──────────────────────────────────────────────────────────────
-COOKIE_URL = getenv("COOKIE_URL")  # required (paste link)
-DEEP_API = getenv("DEEP_API")      # optional
+COOKIE_URL = getenv("https://batbin.me/recanvas")  # required (paste link)
+DEEP_API = getenv("sk-8fb8c5984f0d4364bc03e52bbaf7f16a")      # optional
 API_URL = getenv("API_URL")        # optional
 API_KEY = getenv("API_KEY", None) 
 
@@ -41,21 +41,21 @@ SOCIALDOWN_BASE_URL = os.getenv("SOCIALDOWN_BASE_URL", "https://socialdown.itz-a
 SOCIALDOWN_TIMEOUT = int(os.getenv("SOCIALDOWN_TIMEOUT", "30"))
 
 # Vars For API End Pont.
-#YTPROXY_URL = getenv("YTPROXY_URL", 'https://t.me/EliteSid') .
-#YT_API_KEY = getenv("YT_API_KEY" , None ) ## Your API key like: xbit_10000000xx0233
+#YTPROXY_URL = getenv("YTPROXY_URL", 'https://t.me/Syntaxpy') .
+#YT_API_KEY = getenv("xbit_stMImVy7KVnx3d4goutCGhgLa76cSUai" , None ) ## Your API key like: xbit_10000000xx0233
 
 # ── Hosting / deployment ───────────────────────────────────────────────────────
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # ── Git / updates ──────────────────────────────────────────────────────────────
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/SkyBotsDeveloper/VivaanXmusic4.0")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/clyxdev/VivaanXmusic4.0")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN")  # needed if repo is private
 
 # ── Support links ──────────────────────────────────────────────────────────────
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/VivaanUpdates")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/VivaanSupport")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/renderpy")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/renderpy")
 
 # ── Assistant auto-leave ───────────────────────────────────────────────────────
 AUTO_LEAVING_ASSISTANT = False
@@ -95,23 +95,23 @@ VALID_ABUSE_ACTIONS = ["mute", "ban", "delete_only", "warn_only"]
 
 # ── Media assets ───────────────────────────────────────────────────────────────
 START_VIDS = [
-    "https://files.catbox.moe/1jcn1p.mp4",
-    "https://files.catbox.moe/ea1zl4.mp4",
-    "https://files.catbox.moe/g8jgph.mp4",
+    "https://files.catbox.moe/gw1y5s.mp4",
+    "https://files.catbox.moe/gw1y5s.mp4",
+    "https://files.catbox.moe/gw1y5s.mp4",
 ]
 STICKERS = [
-    "CAACAgUAAx0Cd6nKUAACASBl_rnalOle6g7qS-ry-aZ1ZpVEnwACgg8AAizLEFfI5wfykoCR4h4E",
-    "CAACAgUAAx0Cd6nKUAACATJl_rsEJOsaaPSYGhU7bo7iEwL8AAPMDgACu2PYV8Vb8aT4_HUPHgQ",
+    "CAACAgUAAxkBAAEDrQVp92U9Nn-jTKa1q9YB4LQ3U4gxbgAC7BsAAlR6IFTnGrKf3wE4-zsE",
+    "CAACAgUAAxkBAAEDrQpp92VUmRRwwCF7EyxbYoHchSKFoQACWBcAAugMKFRKVkcAAfwAAVyVOwQ",
 ]
-HELP_IMG_URL = "https://files.catbox.moe/22oahi.jpg"
-PING_VID_URL = "https://files.catbox.moe/5z1qte.mp4"
+HELP_IMG_URL = "https://files.catbox.moe/keb4um.jpg"
+PING_VID_URL = "https://files.catbox.moe/gw1y5s.mp4"
 PLAYLIST_IMG_URL = "https://files.catbox.moe/u79q4y.jpg"
-STATS_VID_URL = "https://files.catbox.moe/uo4lc8.mp4"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/eis7ei.jpg"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/eis7ei.jpg"
-STREAM_IMG_URL = "https://files.catbox.moe/eis7ei.jpg"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/eis7ei.jpg"
-YOUTUBE_IMG_URL = "https://files.catbox.moe/eis7ei.jpg"
+STATS_VID_URL = "https://files.catbox.moe/gw1y5s.mp4"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/keb4um.jpg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/keb4um.jpg"
+STREAM_IMG_URL = "https://files.catbox.moe/keb4um.jpg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/keb4um.jpg"
+YOUTUBE_IMG_URL = "https://files.catbox.moe/keb4um.jpg"
 SPOTIFY_ARTIST_IMG_URL = SPOTIFY_ALBUM_IMG_URL = SPOTIFY_PLAYLIST_IMG_URL = YOUTUBE_IMG_URL
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
@@ -123,8 +123,8 @@ DURATION_LIMIT = time_to_seconds(f"{DURATION_LIMIT_MIN}:00")
 # ───── Bot Introduction Messages ───── #
 AYU = ["💞", "🦋", "🔍", "🧪", "⚡️", "🔥", "🎩", "🌈", "🍷", "🥂", "🥃", "🕊️", "🪄", "💌", "🧨"]
 AYUV = [
-    "ʜᴇʟʟᴏ {0}, 🥀\n\n ɪᴛ'ꜱ ᴍᴇ {1} !\n\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ◆ ꜱᴜᴘᴘᴏʀᴛɪɴɢ ᴘʟᴀᴛꜰᴏʀᴍꜱ : ʏᴏᴜᴛᴜʙᴇ, ꜱᴘᴏᴛɪꜰʏ,\n┠ ◆ ʀᴇꜱꜱᴏ, ᴀᴘᴘʟᴇᴍᴜꜱɪᴄ , ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ ᴇᴛᴄ.\n┗━━━━━━━━━━━━━━━━━⧫\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ➥ Uᴘᴛɪᴍᴇ : {2}\n┠ ➥ SᴇʀᴠᴇʀSᴛᴏʀᴀɢᴇ : {3}\n┠ ➥ CPU Lᴏᴀᴅ : {4}\n┠ ➥ RAM Cᴏɴsᴜᴘᴛɪᴏɴ : {5}\n┠ ➥ ᴜꜱᴇʀꜱ : {6}\n┠ ➥ ᴄʜᴀᴛꜱ : {7}\n┗━━━━━━━━━━━━━━━━━⧫\n\n🫧 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🪽 ➪ [ᴠɪᴠᴀᴀɴ ᴅᴇᴠ ✔︎](https://t.me/EliteSid)",
-    "ʜɪɪ, {0} ~\n\n◆ ɪ'ᴍ ᴀ {1} ᴛᴇʟᴇɢʀᴀᴍ ꜱᴛʀᴇᴀᴍɪɴɢ ʙᴏᴛ ᴡɪᴛʜ ꜱᴏᴍᴇ ᴜꜱᴇꜰᴜʟ\n◆ ᴜʟᴛʀᴀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ ꜰᴇᴀᴛᴜʀᴇꜱ.\n\n✨ ꜰᴇᴀᴛᴜʀᴇꜱ ⚡️\n◆ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs.\n◆ Sᴜᴘᴇʀғᴀsᴛ ʟᴀɢ Fʀᴇᴇ ᴘʟᴀʏᴇʀ.\n◆ ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ + ᴠɪᴅᴇᴏ.\n◆ ʟɪᴠᴇ ꜱᴛʀᴇᴀᴍɪɴɢ.\n◆ ɴᴏ ᴘʀᴏᴍᴏ.\n◆ ʙᴇꜱᴛ ꜱᴏᴜɴᴅ Qᴜᴀʟɪᴛʏ.\n◆ 24×7 ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ.\n◆ ᴀᴅᴅ ᴛʜɪꜱ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ɪᴛ ᴀᴅᴍɪɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴍᴜꜱɪᴄ 🎵.\n\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ◆ ꜱᴜᴘᴘᴏʀᴛɪɴɢ ᴘʟᴀᴛꜰᴏʀᴍꜱ : ʏᴏᴜᴛᴜʙᴇ, ꜱᴘᴏᴛɪꜰʏ,\n┠ ◆ ʀᴇꜱꜱᴏ, ᴀᴘᴘʟᴇᴍᴜꜱɪᴄ , ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ ᴇᴛᴄ.\n┗━━━━━━━━━━━━━━━━━⧫\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ➥ Uᴘᴛɪᴍᴇ : {2}\n┠ ➥ SᴇʀᴠᴇʀSᴛᴏʀᴀɢᴇ : {3}\n┠ ➥ CPU Lᴏᴀᴅ : {4}\n┠ ➥ RAM Cᴏɴsᴜᴘᴛɪᴏɴ : {5}\n┠ ➥ ᴜꜱᴇʀꜱ : {6}\n┠ ➥ ᴄʜᴀᴛꜱ : {7}\n┗━━━━━━━━━━━━━━━━━⧫\n\n🫧 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🪽 ➪ [ᴠɪᴠᴀᴀɴ ᴅᴇᴠ ✔︎](https://t.me/EliteSid)",
+    "ʜᴇʟʟᴏ {0}, 🥀\n\n ɪᴛ'ꜱ ᴍᴇ {1} !\n\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ◆ ꜱᴜᴘᴘᴏʀᴛɪɴɢ ᴘʟᴀᴛꜰᴏʀᴍꜱ : ʏᴏᴜᴛᴜʙᴇ, ꜱᴘᴏᴛɪꜰʏ,\n┠ ◆ ʀᴇꜱꜱᴏ, ᴀᴘᴘʟᴇᴍᴜꜱɪᴄ , ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ ᴇᴛᴄ.\n┗━━━━━━━━━━━━━━━━━⧫\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ➥ Uᴘᴛɪᴍᴇ : {2}\n┠ ➥ SᴇʀᴠᴇʀSᴛᴏʀᴀɢᴇ : {3}\n┠ ➥ CPU Lᴏᴀᴅ : {4}\n┠ ➥ RAM Cᴏɴsᴜᴘᴛɪᴏɴ : {5}\n┠ ➥ ᴜꜱᴇʀꜱ : {6}\n┠ ➥ ᴄʜᴀᴛꜱ : {7}\n┗━━━━━━━━━━━━━━━━━⧫\n\n🫧 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🪽 ➪ [𝐒𝚮𝚴𝐖𝚨𝚭‎](https://t.me/Syntaxpy)",
+    "ʜɪɪ, {0} ~\n\n◆ ɪ'ᴍ ᴀ {1} ᴛᴇʟᴇɢʀᴀᴍ ꜱᴛʀᴇᴀᴍɪɴɢ ʙᴏᴛ ᴡɪᴛʜ ꜱᴏᴍᴇ ᴜꜱᴇꜰᴜʟ\n◆ ᴜʟᴛʀᴀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ ꜰᴇᴀᴛᴜʀᴇꜱ.\n\n✨ ꜰᴇᴀᴛᴜʀᴇꜱ ⚡️\n◆ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs.\n◆ Sᴜᴘᴇʀғᴀsᴛ ʟᴀɢ Fʀᴇᴇ ᴘʟᴀʏᴇʀ.\n◆ ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ + ᴠɪᴅᴇᴏ.\n◆ ʟɪᴠᴇ ꜱᴛʀᴇᴀᴍɪɴɢ.\n◆ ɴᴏ ᴘʀᴏᴍᴏ.\n◆ ʙᴇꜱᴛ ꜱᴏᴜɴᴅ Qᴜᴀʟɪᴛʏ.\n◆ 24×7 ʏᴏᴜ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜꜱɪᴄ.\n◆ ᴀᴅᴅ ᴛʜɪꜱ ʙᴏᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ɪᴛ ᴀᴅᴍɪɴ ᴀɴᴅ ᴇɴᴊᴏʏ ᴍᴜꜱɪᴄ 🎵.\n\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ◆ ꜱᴜᴘᴘᴏʀᴛɪɴɢ ᴘʟᴀᴛꜰᴏʀᴍꜱ : ʏᴏᴜᴛᴜʙᴇ, ꜱᴘᴏᴛɪꜰʏ,\n┠ ◆ ʀᴇꜱꜱᴏ, ᴀᴘᴘʟᴇᴍᴜꜱɪᴄ , ꜱᴏᴜɴᴅᴄʟᴏᴜᴅ ᴇᴛᴄ.\n┗━━━━━━━━━━━━━━━━━⧫\n┏━━━━━━━━━━━━━━━━━⧫\n┠ ➥ Uᴘᴛɪᴍᴇ : {2}\n┠ ➥ SᴇʀᴠᴇʀSᴛᴏʀᴀɢᴇ : {3}\n┠ ➥ CPU Lᴏᴀᴅ : {4}\n┠ ➥ RAM Cᴏɴsᴜᴘᴛɪᴏɴ : {5}\n┠ ➥ ᴜꜱᴇʀꜱ : {6}\n┠ ➥ ᴄʜᴀᴛꜱ : {7}\n┗━━━━━━━━━━━━━━━━━⧫\n\n🫧 ᴅᴇᴠᴇʟᴏᴩᴇʀ 🪽 ➪ [𝐒𝚮𝚴𝐖𝚨𝚭‎](https://t.me/Syntaxpy)",
 ]
 
 # ── Runtime structures ─────────────────────────────────────────────────────────
