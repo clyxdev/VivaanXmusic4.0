@@ -10,7 +10,7 @@ load_dotenv()
 # ── Core bot config ────────────────────────────────────────────────────────────
 API_ID = int(getenv("API_ID",38677857))
 API_HASH = getenv("API_HASH", "064dccd80fc2634c2fefea331df82bb0")
-BOT_TOKEN = getenv("8728787845:AAFU_eOR1KD_2-2IGsDTLgpwVtMDAFboFlU")
+BOT_TOKEN = getenv("BOT_TOKEN")
 
 OWNER_ID = int(getenv("OWNER_ID", 1329546526))
 OWNER_USERNAME = getenv("OWNER_USERNAME", "Syntaxpy")
@@ -19,7 +19,7 @@ BOT_NAME = getenv("BOT_NAME", "culsor")
 ASSUSERNAME = getenv("ASSUSERNAME", "Ruhaan_II")
 
 # ── Database & logging ─────────────────────────────────────────────────────────
-MONGO_DB_URI = getenv("mongodb+srv://shnwaz38:shnwaz38@cluster0.itsfvvz.mongodb.net/?appName=Cluster0")
+MONGO_DB_URI = getenv("MONGO_DB_URI")
 LOGGER_ID = int(getenv("LOGGER_ID", -1003586614728))
 
 # ── Limits (durations in min/sec; sizes in bytes) ──────────────────────────────
